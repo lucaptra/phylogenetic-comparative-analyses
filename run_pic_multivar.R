@@ -1,5 +1,5 @@
 # Purpose: Compute phylogenetic independent contrasts (PICs) of multivariate traits
-# Usage: run_pic_multivar.R [working directory] [name of file containing trait data] [phylogeny file in newick format]
+# Usage: Rscript run_pic_multivar.R [working directory] [name of file containing trait data] [phylogeny file in newick format]
 
 # Preliminary steps to run in the Terminal
 # # Compile pic_multivar.c
@@ -16,7 +16,7 @@ setwd(args[1])
 source("pic_multivar.R")
 
 # Pass arguments from the command line
-args = commandArgs(trailingOnly=TRUE)
+args = commandArgs(trailingOnly = TRUE)
 
 # Import your multivariate trait data (e.g., phylogenetic principal components)
 # Warnings:
